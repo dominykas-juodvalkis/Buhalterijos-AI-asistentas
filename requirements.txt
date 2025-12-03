@@ -1,1 +1,24 @@
 
+## ⚙️ Reikalavimai
+
+- Python 3.10+
+- Google Colab arba vietinė aplinka su reikalingais paketo moduliais
+- API raktas Gemini LLM (Google Generative AI)
+
+## 📝 Naudojimas
+
+1. Atidaryti `00_packages.ipynb` Colab’e ir paleisti viską (instaliuojami paketai).  
+2. `01_data_parsing.ipynb` – nuskaito dokumentus ir sukuria DataFrame.  
+3. `02_gemini_classification.ipynb` – vykdo few-shot klasifikaciją naudojant Gemini API.  
+4. `03_ml_classification.ipynb` – TF-IDF + RandomForest klasifikacija (ground truth).  
+5. `04_accounting_mapping.ipynb` – dokumentų žemėlapis į apskaitos įrašus.  
+
+## 🔑 API raktas
+
+- Sukurk Google Cloud projektą.  
+- Įjunk Generative AI API.  
+- Nukopijuok API raktą ir įrašyk į Colab naudodamas:  
+
+```python
+from google.colab import userdata
+api_key = userdata.get('GOOGLE_API_KEY')
